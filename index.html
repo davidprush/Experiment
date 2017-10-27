@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electron Experimenter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        require('./index.js')
+    </script> 
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Let's get that crypto!</h1>
+        <hr>
+    </div>   
+        <div class="flex-item" id="cryptoQuote">
+        <form action="get-crypto-data">
+                <label><input type="checkbox" name="bitcoin" id="bitcoin"> Bitcoin</label>
+                <label><input type="checkbox" name="monero" id="monero"> Monero</label>
+                <label><input type="checkbox" name="ethereum" id="ethereum"> Ethereum</label>
+                <label><input type="checkbox" name="litecoin" id="litecoin"> Litcoin</label>
+                <label><input type="checkbox" name="bitcoin-cash" id="bitcoinCash"> Bitcoin Cash</label>
+        </form>
+        </div>
+        <div class="search-container" id="searchContainer"></div>
+            <div class="tooltip">
+                <span class="tooltiptext">Only use this field to find another currency not listed above.\
+                            Check boxes for currencies you want to look up. Select none to see all.</span>
+                <input class="input" type="text" placeholder="Search for currency" id="searchTxt">
+                <button class="button" type="submit" id="submitBtn">Submit</button>
+            </div>
+        </div>   
+</body>
+</html>

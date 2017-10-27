@@ -1,0 +1,95 @@
+body {
+    background-color: #242525;
+    color: rgb(0, 247, 255);
+    font-family: 'Charter','Segoe UI', Tahoma, sans-serif;
+    text-align: center;  
+    overflow:hidden;
+    -webkit-app-region: drag;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 247, 255);
+    background-color: #434446;
+    padding: 3px 30px;
+    font-size: 12px;
+    border: 1px solid rgb(0, 247, 255);  
+}
+
+.button:active {
+    color: #434446;
+    background-color: rgb(0, 247, 255);
+    border: 1px solid #434446; 
+}
+
+.button:hover {
+    color: rgb(0, 255, 234);
+    background-color: #56585e;
+    border: 1px solid rgb(0, 255, 221); 
+}
+
+.input {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #e6ffe6;
+    padding: 3px 30px;
+    font-size: 12px;
+    border: 1px solid rgb(0, 247, 255);
+}
+
+#main div {
+    -webkit-flex: 0; /* Safari 6.1+ */
+    -ms-flex: 0; /* IE 10 */ 
+    flex: 0;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-container {
+    align-content: center;
+    text-align: center;
+}
+
+.search-container {
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.flex-item {
+    align-content: space-between;
+    text-align: center;
+    margin: 20px; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    display: -webkit-flex;
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    top: 100%;
+    left: 30%; 
+    margin-left: auto; 
+    background-color: black;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    padding: 3px 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
